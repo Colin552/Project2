@@ -3,39 +3,148 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Upcoming Shows"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+  <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView1" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtTitle"
-        android:gravity="center_horizontal"
-        android:background="#ff0000"
-        android:textColor="#ffffff" />
-    <TextView
-        android:text="Friday 04 May 2018"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <TextView
-        android:text="Air Canada Center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
-    <TextView
-        android:text="Toronto, ON, Canada"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
-    <Button
-        android:text="Buy Tickets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        android:background="#ff0000"
-        android:textColor="#ffffff"
-        android:layout_gravity="center_horizontal" />
+      android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+      <TextView
+          android:text="Upcoming Shows"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtTitle"
+          android:gravity="center_horizontal"
+          android:background="#ff0000"
+          android:textColor="#ffffff" />
+      <TextView
+          android:text="Friday 04 May 2018"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView1" />
+      <TextView
+          android:text="Air Canada Center"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView2" />
+      <TextView
+          android:text="Toronto, ON, Canada"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView3" />
+      <Button
+          android:text="Buy Tickets"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnBuy1"
+          android:background="#ff0000"
+          android:textColor="#ffffff"
+          android:layout_gravity="center_horizontal" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout1" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout2" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout3" />
+      <TextView
+          android:text="Friday 03 May 2013"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView1" />
+      <TextView
+          android:text="Cool Kids Center"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView2" />
+      <TextView
+          android:text="Vancouver, BC, Canada"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView3" />
+      <Button
+          android:text="Buy Tickets"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnBuy2"
+          android:background="#ff0000"
+          android:textColor="#ffffff"
+          android:layout_gravity="center_horizontal" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout1" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout2" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout3" />
+      <TextView
+          android:text="Wednesday 13 March 2019"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView1" />
+      <TextView
+          android:text="Durham College"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView2" />
+      <TextView
+          android:text="Oshawa, ON, Canada"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView3" />
+      <Button
+          android:text="Buy Tickets"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnBuy3"
+          android:background="#ff0000"
+          android:textColor="#ffffff"
+          android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>
