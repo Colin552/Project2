@@ -75,7 +75,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Call.axml" />
-    <AndroidResource Include="Resources\layout\Listen.axml" />
+    <AndroidResource Include="Resources\layout\Listen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
