@@ -32,7 +32,7 @@ namespace Welcome
                 if (int.TryParse(phone.Text, out testedNumber))
                 {
                     int numberLength =  Convert.ToInt32(Math.Floor(Math.Log10(testedNumber) + 1));
-                    callButton.Text = numberLength.ToString();
+                    //callButton.Text = numberLength.ToString();
                     // Allowing for 10 digit long Number
                     // Ex: 9059059059
                     if (numberLength == 10)
