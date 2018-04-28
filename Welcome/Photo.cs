@@ -26,10 +26,9 @@ namespace Welcome
         public static Bitmap bitmap;
     }
 
-    [Activity(Label = "Camera App Demo", MainLauncher = true)]
+    [Activity(Label = "Snap a Pic", MainLauncher = true)]
     public class Photo : Activity
     {
-
         private ImageView _imageView;
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -80,7 +79,7 @@ namespace Welcome
         {
             App._dir = new File(
                 Environment.GetExternalStoragePublicDirectory(
-                    Environment.DirectoryPictures), "CameraAppDemo");
+                    Environment.DirectoryPictures), "ConcertPics");
             if (!App._dir.Exists())
             {
                 App._dir.Mkdirs();
@@ -99,7 +98,7 @@ namespace Welcome
         {
             Intent intent = new Intent(MediaStore.ActionImageCapture);
 
-            App._file = new File(App._dir, String.Format("myPhoto_{0}.jpg", Guid.NewGuid()));
+            App._file = new File(App._dir, String.Format("concert_{0}.jpg", Guid.NewGuid()));
 
             intent.PutExtra(MediaStore.ExtraOutput, Uri.FromFile(App._file));
 
