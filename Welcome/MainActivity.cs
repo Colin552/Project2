@@ -10,7 +10,7 @@ using Android.Content;
 
 namespace Welcome
 {
-    [Activity(Label = "Tissue Emporium", MainLauncher = true)]
+    [Activity(Label = "Concert Helper", MainLauncher = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

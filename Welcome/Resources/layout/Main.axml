@@ -5,54 +5,51 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  <LinearLayout
-      android:orientation="horizontal"
-      android:minWidth="25px"
-      android:minHeight="25px"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/linearLayout1">
-    <TextView
-        android:text="Select an option"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/textView1"
-        android:gravity="center"
-        android:textSize="@android:dimen/app_icon_size" />
-  </LinearLayout>
-  <GridLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/gridLayout1">
-    <Button
-        android:text="About"
-        android:id="@+id/btnLearn"
-        android:layout_width="wrap_content"
-        android:width="380px"
-        android:height="250px" />
-    <Button
-        android:id="@+id/btnPhoto"
-        android:layout_width="wrap_content"
-        android:width="380px"
-        android:height="250px"
-        android:text="Snap a pic" />
-  </GridLayout>
-  <GridLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/gridLayout2">
-    <Button
-        android:text="Call Friends"
-        android:id="@+id/btnCall"
-        android:layout_width="wrap_content"
-        android:width="380px"
-        android:height="250px" />
-    <Button
-        android:text="Button"
-        android:id="@+id/btnListen"
-        android:layout_width="wrap_content"
-        android:width="380px"
-        android:height="250px" />
-  </GridLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Select an option"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textSize="@android:dimen/app_icon_size" />
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:id="@+id/gridLayout1">
+        <Button
+            android:text="About"
+            android:id="@+id/btnLearn"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="wrap_content"
+            android:text="Snap a pic"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:text="Call Friends"
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:text="Button"
+            android:id="@+id/btnListen"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+    </GridLayout>
 </LinearLayout>

@@ -84,8 +84,8 @@ namespace Welcome
 			// aapt resource value: 0x7f06000f
 			public const int btnLikey = 2131099663;
 			
-			// aapt resource value: 0x7f060017
-			public const int btnListen = 2131099671;
+			// aapt resource value: 0x7f060016
+			public const int btnListen = 2131099670;
 			
 			// aapt resource value: 0x7f060012
 			public const int btnPause = 2131099666;
@@ -102,11 +102,8 @@ namespace Welcome
 			// aapt resource value: 0x7f060013
 			public const int gridLayout1 = 2131099667;
 			
-			// aapt resource value: 0x7f060016
-			public const int gridLayout2 = 2131099670;
-			
-			// aapt resource value: 0x7f060019
-			public const int imageView1 = 2131099673;
+			// aapt resource value: 0x7f060018
+			public const int imageView1 = 2131099672;
 			
 			// aapt resource value: 0x7f060003
 			public const int linearLayout1 = 2131099651;
@@ -117,8 +114,8 @@ namespace Welcome
 			// aapt resource value: 0x7f06000a
 			public const int linearLayout3 = 2131099658;
 			
-			// aapt resource value: 0x7f060018
-			public const int myButton = 2131099672;
+			// aapt resource value: 0x7f060017
+			public const int myButton = 2131099671;
 			
 			// aapt resource value: 0x7f060002
 			public const int scrollView1 = 2131099650;
