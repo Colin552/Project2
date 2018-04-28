@@ -35,6 +35,11 @@ namespace Welcome
             Button meLikeyButton = FindViewById<Button>(Resource.Id.btnLikey);
             Button knockKnockButton = FindViewById<Button>(Resource.Id.btnDoor);
 
+            Button playStopButton = FindViewById<Button>(Resource.Id.btnPlayStop);
+            Button pauseButton = FindViewById<Button>(Resource.Id.btnPause);
+
+            int lastPlayed = 0 ;
+
             motherLandButton.Click += (sender, e) =>
             {
                 if (player != null)
@@ -43,6 +48,7 @@ namespace Welcome
                         player.Stop();
                 }
                 player = MediaPlayer.Create(this, Resource.Raw.russia);
+                lastPlayed = Resource.Raw.russia;
                 player.Start();
             };
 
@@ -54,6 +60,7 @@ namespace Welcome
                         player.Stop();
                 }
                 player = MediaPlayer.Create(this, Resource.Raw.knockknock);
+                lastPlayed = Resource.Raw.knockknock;
                 player.Start();
             };
 
@@ -65,7 +72,41 @@ namespace Welcome
                         player.Stop();
                 }
                 player = MediaPlayer.Create(this, Resource.Raw.likey);
+                lastPlayed = Resource.Raw.likey;
                 player.Start();
+            };
+
+            playStopButton.Click += (sender, e) =>
+            {
+
+                if (lastPlayed != 0)
+                {
+                    if (player.IsPlaying)
+                    {
+                        player.Stop();
+                    }
+                    else
+                    {
+                        player = MediaPlayer.Create(this, lastPlayed);
+                        player.Start();
+                    }
+                }
+            };
+            pauseButton.Click += (sender, e) =>
+            {
+                if (player != null)
+                {
+                    if (player.IsPlaying)
+                    {
+                        player.Pause();
+                        pauseButton.Text = "Unpause";
+                    }
+                    else
+                    {
+                        player.Start();
+                        pauseButton.Text = "Pause";
+                    }
+                }
             };
         }
     }

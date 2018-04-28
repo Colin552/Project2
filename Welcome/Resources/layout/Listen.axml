@@ -20,4 +20,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnLikey" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gdlAudioControls">
+        <Button
+            android:text="Play/Stop"
+            android:id="@+id/btnPlayStop" />
+        <Button
+            android:text="Pause"
+            android:id="@+id/btnPause" />
+    </GridLayout>
 </LinearLayout>
