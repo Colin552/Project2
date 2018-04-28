@@ -16,12 +16,12 @@ namespace Welcome
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
             Button learnButton = FindViewById<Button>(Resource.Id.btnLearn);
             Button photoButton = FindViewById<Button>(Resource.Id.btnPhoto);
+            Button callButton = FindViewById<Button>(Resource.Id.btnCall);
+            Button listenButton = FindViewById<Button>(Resource.Id.btnListen);
 
             learnButton.Click += (sender, e) =>
             {
@@ -35,10 +35,18 @@ namespace Welcome
                 StartActivity(intent);
             };
 
+            callButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(Call));
+                StartActivity(intent);
+            };
 
+            listenButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(Audio));
+                StartActivity(intent);
+            };
         }
-
-        
     }
 }
 
