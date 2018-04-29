@@ -31,6 +31,12 @@ namespace Welcome
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Listen);
 
+            TextView musicWelcome = FindViewById<TextView>(Resource.Id.txtMusicWelcome);
+            musicWelcome.Text = "Check out some of the music you\'ll be hearing at our concerts to get you in the mood.";
+
+            TextView musicHelp = FindViewById<TextView>(Resource.Id.txtMusicHelp);
+            musicHelp.Text = "Click the title of the song and then the \"Play/Pause\" button to start listening. Stop by pressing the \"Stop\" button.";
+
             Button motherLandButton = FindViewById<Button>(Resource.Id.btnCommunism);
             Button meLikeyButton = FindViewById<Button>(Resource.Id.btnLikey);
             Button knockKnockButton = FindViewById<Button>(Resource.Id.btnDoor);

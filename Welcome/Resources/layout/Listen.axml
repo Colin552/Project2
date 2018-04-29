@@ -6,16 +6,14 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <TextView
-        android:text="Check out some of the music you'll be hearing at our concerts to get you in the mood."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
+        android:id="@+id/txtMusicWelcome"
         android:padding="5dp" />
     <TextView
-        android:text="Click the title of the song and then the &quot;Play/Pause&quot; button to start listening. Stop by pressing the &quot;Stop&quot; button."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/txtMusicHelp"
         android:textStyle="italic"
         android:padding="5dp" />
     <Button
