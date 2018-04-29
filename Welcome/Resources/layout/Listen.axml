@@ -5,6 +5,19 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <TextView
+        android:text="Check out some of the music you'll be hearing at our concerts to get you in the mood."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:padding="5dp" />
+    <TextView
+        android:text="Click the title of the song and then the &quot;Play/Pause&quot; button to start listening. Stop by pressing the &quot;Stop&quot; button."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="italic"
+        android:padding="5dp" />
     <Button
         android:text="The Song of the Motherland"
         android:layout_width="match_parent"
@@ -30,11 +43,13 @@
             android:text="Play/Stop"
             android:id="@+id/btnPlayStop"
             android:layout_width="wrap_content"
-            android:layout_columnWeight="1" />
+            android:layout_columnWeight="1"
+            android:backgroundTint="#ff008200" />
         <Button
             android:text="Pause"
             android:id="@+id/btnPause"
             android:layout_width="wrap_content"
-            android:layout_columnWeight="1" />
+            android:layout_columnWeight="1"
+            android:backgroundTint="#ff960000" />
     </GridLayout>
 </LinearLayout>

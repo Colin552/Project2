@@ -3,15 +3,23 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-  <Button
-      android:id="@+id/myButton"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/openCamera" />
-  <ImageView
-      android:src="@android:drawable/ic_menu_gallery"
-      android:layout_width="fill_parent"
-      android:layout_height="300.0dp"
-      android:id="@+id/imageView1"
-      android:adjustViewBounds="true" />
+    <TextView
+        android:text="Take a picture to let your friends all know what they were missing out on!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:padding="5dp" />
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/openCamera"
+        android:backgroundTint="#ff32cd32" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="300.0dp"
+        android:id="@+id/imageView1"
+        android:adjustViewBounds="true" />
 </LinearLayout>
