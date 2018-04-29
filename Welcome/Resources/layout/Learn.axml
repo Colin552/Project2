@@ -29,7 +29,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView1" />
+                android:id="@+id/textView1"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
             <TextView
                 android:text="Air Canada Center"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -47,9 +49,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnBuy1"
-                android:background="#ff0000"
                 android:textColor="#ffffff"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#ff32cd32" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:minWidth="25px"
@@ -72,11 +74,13 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout3" />
             <TextView
-                android:text="Friday 03 May 2013"
+                android:text="Friday 11 May 2018"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView1" />
+                android:id="@+id/textView1"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
             <TextView
                 android:text="Cool Kids Center"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -94,9 +98,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnBuy2"
-                android:background="#ff0000"
                 android:textColor="#ffffff"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#ff32cd32" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:minWidth="25px"
@@ -123,7 +127,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView1" />
+                android:id="@+id/textView1"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
             <TextView
                 android:text="Durham College"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -141,9 +147,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnBuy3"
-                android:background="#ff0000"
                 android:textColor="#ffffff"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#ff32cd32" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -38,7 +38,6 @@ namespace Welcome
             {
                 DoStuffWhenClicked();
             };
-            // Create your application here
         }
 
         public void DoStuffWhenClicked()
